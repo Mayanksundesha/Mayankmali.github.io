@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+p1 {
+    font-family: 'Baskerville Old Face', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.771)), url(bg.jpg);
+    height: 120vh;
+    background-size: 100%;
+    color: rgba(255, 255, 255, 0.802);
+    text-align: center;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+}
+
+#head {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Yellow color */
+}
+
+#subhead {
+    font-family: 'Courier New', sans-serif;
+    font-size: 1.2em;
+    color: #dde2e8; /* Light blue color */
+}
+
+hr {
+    margin-top: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+#line {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #a7a6a686; /* Coral color */
+    height: 40px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.button:hover {
+    background-color: #a7a6a686; /* Darker coral color on hover */
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+}
+
+.mid {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+img {
+    height: 150px;
+    border-radius: 1500px 1500px 1500px 1500px;
+    margin-top: 5%;
+    border: 2px inset #000000;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    img {
+        height: 150px;
+        border-radius: 1500px 1500px 1500px 1500px;
+        margin-top: 5%;
+        border: 2px inset #000000;
+    }
+
+    #head {
+        font-size: 25px;
+        text-decoration: underline;
+        margin-bottom: 7px;
+    }
+
+    #subhead {
+        font-size: 15px;
+        color: #ffffff94;
+    }
+
+    hr {
+        width: 300px;
+    }
+
+    .mid {
+        font-size: 15px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    #web {
+        font-weight: 100;
+    }
+
+    iframe {
+        margin-top: 10%;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20%;
+    }
+
+    #last {
+        font-size: 17px;
+        margin-bottom: 5%;
+    }
+}
+
+/* Unique Styles */
+#heading, #subhead, .button, #socials a {
+    animation: fadeInUp 1s ease-out;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
