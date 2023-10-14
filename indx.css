@@ -51,15 +51,17 @@ hr {
 }
 
 .button {
-    background-color: #a7a6a686; /* Coral color */
-    height: 40px;
-    border-radius: 10px;
+    background-color: #a7a6a686;
+    height: 45px;
+    border-radius: 17px;
     width: 300px;
+    margin-bottom: 17px; /* Add margin between buttons */
 }
 
 .button:hover {
-    background-color: #a7a6a686; /* Darker coral color on hover */
+    background-color: #a7a6a686;
 }
+
 
 #socials {
     display: flex;
